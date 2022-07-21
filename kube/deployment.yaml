@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: imgclass
+  name: multiclass
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: imageclassifier
+      app: classifier
   template:
     metadata:
       labels:
-        app: imageclassifier
+        app: classifier
     spec:
       containers:
-      - name: cv-app
-        image: gcr.io/srivatsan-project/imgwebapp:v1
+      - name: ml-app
+        image: gcr.io/multiclassificationproject/imgwebapp:v1
         ports:
         - containerPort: 8501
