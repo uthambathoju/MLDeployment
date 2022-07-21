@@ -1,4 +1,4 @@
 # MLDeployment
 
 ML Deployment on Kubernetes
-updated v1.0
+updated v1.11
